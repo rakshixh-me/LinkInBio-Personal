@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E6FF2B;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 code {
@@ -13,6 +15,24 @@ code {
     monospace;
 }
 
-h1 {
-  color: #1B263F;
+.App {
+  /* background-color: red; */
+  margin: 0 auto;
+  max-width: 50rem;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  .App {
+    width: 50rem;
+  }
 }

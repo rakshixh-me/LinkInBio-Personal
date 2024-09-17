@@ -1,0 +1,24 @@
+.card {
+    background-color: #1B263F;
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+.imgDivContentDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 25%;
+    border-radius: 0.5rem;
+}
+
+.contentDiv {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #E6FF2B;
+}
