@@ -1,6 +1,5 @@
 .card {
-    background-color: #C1EA3E;
-    color: aliceblue;
+    background-color: var(--light);
     padding: 1rem;
     border-radius: 0.8rem;
 }
@@ -20,6 +19,5 @@
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
-    /* gap: 0.188rem; */
-    color: #13141B;
+    color: var(--dark);
 }
