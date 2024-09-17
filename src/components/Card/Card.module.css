@@ -1,5 +1,5 @@
 .card {
-    background-color: #1B263F;
+    background-color: #C1EA3E;
     color: aliceblue;
     padding: 1rem;
     border-radius: 0.8rem;
@@ -8,10 +8,11 @@
 .imgDivContentDiv {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .img {
-    width: 25%;
+    width: 22%;
     border-radius: 0.5rem;
 }
 
@@ -19,6 +20,6 @@
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
-    color: #E6FF2B;
+    gap: 0.313rem;
+    color: #13141B;
 }
