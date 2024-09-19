@@ -15,8 +15,4 @@ export const socialIconLinks = [
     name: "Instagram",
     link: "https://instagram.com",
   },
-  {
-    name: "Email",
-    link: "mailto:user@gmail.com",
-  },
 ];

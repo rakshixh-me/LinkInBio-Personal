@@ -26,6 +26,9 @@ body {
   margin: 0 auto;
   max-width: 30rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 h1,
@@ -51,6 +54,26 @@ h3 {
 
 p {
   font-size: 12px;
+}
+
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Style for the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Style for the draggable scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 @media screen and (min-width: 1024px) {
