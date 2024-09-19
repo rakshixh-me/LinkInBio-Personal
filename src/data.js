@@ -2,25 +2,25 @@ export const socialIconLinks = {
   mainSocials: [
     {
       name: "GitHub",
-      link: "https://github.com",
+      link: "https://github.com/rakshixh",
     },
   ],
   subSocials: [
     {
       name: "Email",
-      link: "mailto:email@example.com",
+      link: "mailto:rakshixh.info@gmail.com",
     },
     {
       name: "LinkedIn",
-      link: "https://linkedin.com",
+      link: "https://in.linkedin.com/in/rakshixh",
     },
     {
       name: "Pinterest",
-      link: "https://pinterest.com",
+      link: "https://in.pinterest.com/rakshixh/",
     },
     {
       name: "Instagram",
-      link: "https://instagram.com",
+      link: "https://www.instagram.com/rakshixh/",
     },
   ],
 };
@@ -28,8 +28,12 @@ export const socialIconLinks = {
 export const Links = {
   mainLinks: [
     {
-      name: "Link 1",
-      link: "https://github.com",
+      name: "Code Questic",
+      link: "https://github.com/CodeQuestic",
+    },
+    {
+      name: "Buy Me A Burger",
+      link: "https://buymeacoffee.com/rakshixh",
     },
   ],
   subLinks: [

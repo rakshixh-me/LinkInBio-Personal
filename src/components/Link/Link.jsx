@@ -1,5 +1,7 @@
 import React from "react";
 import LinkCSS from "./Link.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 function Link({ ArrayOfLinks }) {
   return (
@@ -9,8 +11,15 @@ function Link({ ArrayOfLinks }) {
     >
       {ArrayOfLinks.map((link, index) => {
         return (
-          <a key={index} href={link.link} className={LinkCSS.link}>
+          <a
+            key={index}
+            href={link.link}
+            target="_blank"
+            rel="noreferrer"
+            className={LinkCSS.link}
+          >
             {link.name}
+            <FontAwesomeIcon icon={faSquareArrowUpRight} size="lg" />
           </a>
         );
       })}
