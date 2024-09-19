@@ -19,7 +19,10 @@ const iconMap = {
 
 function SocialCards() {
   return (
-    <div className={SocialCardsCSS.socialsMainDiv}>
+    <div
+      className={SocialCardsCSS.socialsMainDiv}
+      style={{ animation: "fadeInEffect 2s ease-in-out forwards" }}
+    >
       <div className={SocialCardsCSS.div1}>
         <button
           className={SocialCardsCSS.mainButton}
@@ -27,7 +30,17 @@ function SocialCards() {
             window.open(socialIconLinks.mainSocials[0].link, "_blank")
           }
         >
-          <FontAwesomeIcon icon={faGithubAlt} size="6x" />
+          <FontAwesomeIcon
+            icon={faGithubAlt}
+            size="6x"
+            shake
+            style={{
+              "--fa-animation-duration": "3s",
+              "--fa-animation-iteration-count": "infinite",
+              "--fa-animation-delay": "4s",
+              "--fa-animation-timing-function": "ease-in-out",
+            }}
+          />
         </button>
       </div>
 
@@ -38,7 +51,17 @@ function SocialCards() {
             className={SocialCardsCSS.button}
             onClick={() => window.open(social.link, "_blank")}
           >
-            <FontAwesomeIcon icon={iconMap[social.name]} size="lg" />
+            <FontAwesomeIcon
+              icon={iconMap[social.name]}
+              size="lg"
+              shake
+              style={{
+                "--fa-animation-duration": "3s",
+                "--fa-animation-iteration-count": "infinite",
+                "--fa-animation-delay": "4s",
+                "--fa-animation-timing-function": "ease-in-out",
+              }}
+            />
           </button>
         ))}
       </div>

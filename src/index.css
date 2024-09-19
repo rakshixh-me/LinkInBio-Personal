@@ -76,8 +76,27 @@ p {
   background-clip: padding-box;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 728px) {
   .App {
     width: 50rem;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Define the keyframes for the fade-in animation */
+@keyframes fadeInEffect {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
