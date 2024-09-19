@@ -24,3 +24,26 @@ export const socialIconLinks = {
     },
   ],
 };
+
+export const Links = {
+  mainLinks: [
+    {
+      name: "Link 1",
+      link: "https://github.com",
+    },
+  ],
+  subLinks: [
+    {
+      name: "Link 2",
+      link: "https://github.com",
+    },
+    {
+      name: "Link 3",
+      link: "https://github.com",
+    },
+    {
+      name: "Link 4",
+      link: "https://github.com",
+    },
+  ],
+};
