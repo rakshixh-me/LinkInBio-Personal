@@ -28,12 +28,17 @@
     color: var(--dark);
 }
 
+.socialIconsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .btn {
-    width: 100%;
     outline: none;
     border: none;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 50%;
     background-color: var(--blue-secondary);
     color: var(--dark);
     font-family: "Fira Code", monospace;

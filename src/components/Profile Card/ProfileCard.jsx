@@ -1,6 +1,23 @@
 import React from "react";
 import ProfileCardCSS from "./ProfileCard.module.css";
 import rakshixh from "../../assets/rakshixhDev.png";
+import { socialIconLinks } from "../../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithubAlt,
+  faLinkedinIn,
+  faPinterestP,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+
+const iconMap = {
+  GitHub: faGithubAlt,
+  LinkedIn: faLinkedinIn,
+  Pinterest: faPinterestP,
+  Instagram: faInstagram,
+  Email: faPaperPlane,
+};
 
 function ProfileCard() {
   return (
@@ -14,10 +31,18 @@ function ProfileCard() {
           </div>
         </div>
       </div>
-      <div>
-        <button className={ProfileCardCSS.btn}>
-          <p>Social Accounts</p>
-        </button>
+      <div className={ProfileCardCSS.socialIconsDiv}>
+        {socialIconLinks.map((social) => (
+          <a
+            href={social.link}
+            key={social.name}
+            className={ProfileCardCSS.btn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={iconMap[social.name]} fixedWidth />
+          </a>
+        ))}
       </div>
     </div>
   );
