@@ -25,6 +25,8 @@ function SocialCards() {
     >
       <div className={SocialCardsCSS.div1}>
         <button
+          id="btn"
+          aria-label="mainbtn"
           className={SocialCardsCSS.mainButton}
           onClick={() =>
             window.open(socialIconLinks.mainSocials[0].link, "_blank")
@@ -47,6 +49,8 @@ function SocialCards() {
       <div className={SocialCardsCSS.div2}>
         {socialIconLinks.subSocials.map((social, index) => (
           <button
+            id="btn"
+            aria-label="btn"
             key={index}
             className={SocialCardsCSS.button}
             onClick={() => window.open(social.link, "_blank")}

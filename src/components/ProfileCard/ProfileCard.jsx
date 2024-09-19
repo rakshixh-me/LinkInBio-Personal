@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileCardCSS from "./ProfileCard.module.css";
-import rakshixh from "../../assets/rakshixhDev.png";
+import rakshixh from "../../assets/rakshixhDev.webp";
 
 function ProfileCard() {
   return (
