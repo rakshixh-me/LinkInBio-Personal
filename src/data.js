@@ -55,8 +55,12 @@ export const HomeLinks = {
 export const PhotoLinks = {
   mainLinks: [
     {
-      name: "Photo Link 1",
-      link: "https://github.com/CodeQuestic",
+      name: "VSCO",
+      link: "https://vs.co/se73k8m4",
+    },
+    {
+      name: "Instagram (Photo)",
+      link: "https://www.instagram.com/rakshixh/",
     },
   ],
   subLinks: [
@@ -78,12 +82,8 @@ export const PhotoLinks = {
 export const ArtLinks = {
   mainLinks: [
     {
-      name: "Art",
-      link: "https://github.com/CodeQuestic",
-    },
-    {
-      name: "Art 1",
-      link: "https://buymeacoffee.com/rakshixh",
+      name: "Artfolio",
+      link: "https://rakshixh-art.vercel.app/",
     },
   ],
   subLinks: [

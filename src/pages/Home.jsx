@@ -7,7 +7,7 @@ import NavBar from "../components/NavBar/NavBar";
 import EndText from "../components/EndText/EndText";
 
 function Home() {
-  const [selectedNav, setSelectedNav] = useState("home");
+  const [selectedNav, setSelectedNav] = useState("dev");
 
   const handleNavClick = (value) => {
     console.log(value);
@@ -15,7 +15,7 @@ function Home() {
   };
 
   const renderLinks = () => {
-    if (selectedNav === "home") {
+    if (selectedNav === "dev") {
       return <Link ArrayOfLinks={HomeLinks.mainLinks} />;
     } else if (selectedNav === "art") {
       return <Link ArrayOfLinks={ArtLinks.mainLinks} />;

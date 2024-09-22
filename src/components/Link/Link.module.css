@@ -18,7 +18,3 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.link:hover {
-    background-color: var(--blue);
-}

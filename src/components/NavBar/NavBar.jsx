@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import NavCSS from "./NavBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouse,
-  faCamera,
-  faComputer,
+  faUserSecret,
+  faTachographDigital,
+  faCameraRetro,
 } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar({ onNavClick }) {
-  const [activeButton, setActiveButton] = useState("home");
+  const [activeButton, setActiveButton] = useState("dev");
 
   const handleClick = (value) => {
     setActiveButton(value);
@@ -19,11 +19,11 @@ function NavBar({ onNavClick }) {
     <nav className={NavCSS.navbar}>
       <button
         className={`${NavCSS.navItem} ${
-          activeButton === "home" ? NavCSS.active : NavCSS.inactive
+          activeButton === "dev" ? NavCSS.active : NavCSS.inactive
         }`}
-        onClick={() => handleClick("home")}
+        onClick={() => handleClick("dev")}
       >
-        <FontAwesomeIcon icon={faHouse} />
+        <FontAwesomeIcon icon={faUserSecret} />
       </button>
       <button
         className={`${NavCSS.navItem} ${
@@ -31,7 +31,7 @@ function NavBar({ onNavClick }) {
         }`}
         onClick={() => handleClick("art")}
       >
-        <FontAwesomeIcon icon={faComputer} />
+        <FontAwesomeIcon icon={faTachographDigital} />
       </button>
       <button
         className={`${NavCSS.navItem} ${
@@ -39,7 +39,7 @@ function NavBar({ onNavClick }) {
         }`}
         onClick={() => handleClick("photo")}
       >
-        <FontAwesomeIcon icon={faCamera} />
+        <FontAwesomeIcon icon={faCameraRetro} />
       </button>
     </nav>
   );
