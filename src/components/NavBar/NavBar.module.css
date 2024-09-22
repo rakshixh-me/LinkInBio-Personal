@@ -7,13 +7,15 @@
     display: flex;
     justify-content: space-around;
     padding: 0.5rem 0;
-    z-index: 1000;
 }
 
 .navItem {
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
     font-size: 1.5rem;
     padding: 0.5rem;
+    cursor: pointer;
     transition: color 0.3s ease;
 }
 

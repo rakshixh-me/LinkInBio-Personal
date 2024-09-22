@@ -25,7 +25,7 @@ export const socialIconLinks = {
   ],
 };
 
-export const Links = {
+export const HomeLinks = {
   mainLinks: [
     {
       name: "Code Questic",
@@ -33,6 +33,56 @@ export const Links = {
     },
     {
       name: "Buy Me A Burger",
+      link: "https://buymeacoffee.com/rakshixh",
+    },
+  ],
+  subLinks: [
+    {
+      name: "Link 2",
+      link: "https://github.com",
+    },
+    {
+      name: "Link 3",
+      link: "https://github.com",
+    },
+    {
+      name: "Link 4",
+      link: "https://github.com",
+    },
+  ],
+};
+
+export const PhotoLinks = {
+  mainLinks: [
+    {
+      name: "Photo Link 1",
+      link: "https://github.com/CodeQuestic",
+    },
+  ],
+  subLinks: [
+    {
+      name: "Link 2",
+      link: "https://github.com",
+    },
+    {
+      name: "Link 3",
+      link: "https://github.com",
+    },
+    {
+      name: "Link 4",
+      link: "https://github.com",
+    },
+  ],
+};
+
+export const ArtLinks = {
+  mainLinks: [
+    {
+      name: "Art",
+      link: "https://github.com/CodeQuestic",
+    },
+    {
+      name: "Art 1",
       link: "https://buymeacoffee.com/rakshixh",
     },
   ],

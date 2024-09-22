@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 import NavCSS from "./NavBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,33 +7,40 @@ import {
   faComputer,
 } from "@fortawesome/free-solid-svg-icons";
 
-function NavBar() {
+function NavBar({ onNavClick }) {
+  const [activeButton, setActiveButton] = useState("home");
+
+  const handleClick = (value) => {
+    setActiveButton(value);
+    onNavClick(value);
+  };
+
   return (
     <nav className={NavCSS.navbar}>
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          `${NavCSS.navItem} ${isActive ? NavCSS.active : NavCSS.inactive}`
-        }
+      <button
+        className={`${NavCSS.navItem} ${
+          activeButton === "home" ? NavCSS.active : NavCSS.inactive
+        }`}
+        onClick={() => handleClick("home")}
       >
         <FontAwesomeIcon icon={faHouse} />
-      </NavLink>
-      <NavLink
-        to="/art"
-        className={({ isActive }) =>
-          `${NavCSS.navItem} ${isActive ? NavCSS.active : NavCSS.inactive}`
-        }
+      </button>
+      <button
+        className={`${NavCSS.navItem} ${
+          activeButton === "art" ? NavCSS.active : NavCSS.inactive
+        }`}
+        onClick={() => handleClick("art")}
       >
         <FontAwesomeIcon icon={faComputer} />
-      </NavLink>
-      <NavLink
-        to="/photo"
-        className={({ isActive }) =>
-          `${NavCSS.navItem} ${isActive ? NavCSS.active : NavCSS.inactive}`
-        }
+      </button>
+      <button
+        className={`${NavCSS.navItem} ${
+          activeButton === "photo" ? NavCSS.active : NavCSS.inactive
+        }`}
+        onClick={() => handleClick("photo")}
       >
         <FontAwesomeIcon icon={faCamera} />
-      </NavLink>
+      </button>
     </nav>
   );
 }
