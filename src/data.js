@@ -28,6 +28,10 @@ export const socialIconLinks = {
 export const HomeLinks = {
   mainLinks: [
     {
+      name: "Portfolio",
+      link: "https://rakshixh.tech",
+    },
+    {
       name: "Code Questic",
       link: "https://github.com/CodeQuestic",
     },
@@ -60,7 +64,7 @@ export const PhotoLinks = {
     },
     {
       name: "Instagram (Photo)",
-      link: "https://www.instagram.com/rakshixh/",
+      link: "https://www.instagram.com/rakshixh.photo/",
     },
   ],
   subLinks: [
