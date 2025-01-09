@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-  --light: #C1EA3E;
   --light-secondary: #B1E50E;
   --dark: #13141B;
-  --dark-secondary: #1B1E2D;
-  --blue: #555BD8;
-  --blue-secondary: #A8A7EC;
+  --lightGreen: #E2FBCE;
+  --white: #FFFDEE;
 }
 
 body {
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: var(--dark);
   box-sizing: border-box;
   font-family: "Fira Code", monospace;
@@ -21,6 +17,8 @@ body {
   font-style: normal;
   display: flex;
   justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
