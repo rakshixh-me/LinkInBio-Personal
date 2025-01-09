@@ -9,16 +9,16 @@ function Link({ ArrayOfLinks }) {
       className={LinkCSS.linksMainDiv}
       style={{ animation: "fadeInEffect 2s ease-in-out forwards" }}
     >
-      {ArrayOfLinks.map((link, index) => {
+      {ArrayOfLinks?.map((link, index) => {
         return (
           <a
             key={index}
-            href={link.link}
+            href={link?.link}
             target="_blank"
             rel="noreferrer"
             className={LinkCSS.link}
           >
-            {link.name}
+            {link?.name}
             <FontAwesomeIcon icon={faSquareArrowUpRight} size="lg" />
           </a>
         );
