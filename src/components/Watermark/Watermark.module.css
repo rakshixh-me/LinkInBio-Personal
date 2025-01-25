@@ -1,0 +1,15 @@
+.watermarkDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watermarkLink {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--light-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
