@@ -1,5 +1,4 @@
 .card {
-    background-color: var(--white);
     padding: 1rem;
     border-radius: 0.8rem;
 }
@@ -20,6 +19,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--dark);
     margin-top: 1rem;
+    gap: 0.3rem;
 }

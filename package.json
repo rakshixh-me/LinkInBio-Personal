@@ -17,16 +17,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "dev": "cross-env REACT_APP_BUILD=dev react-scripts start",
     "art": "cross-env REACT_APP_BUILD=art react-scripts start",
     "photo": "cross-env REACT_APP_BUILD=photo react-scripts start",
     "build:dev": "cross-env REACT_APP_BUILD=dev react-scripts build",
     "build:art": "cross-env REACT_APP_BUILD=art react-scripts build",
-    "build:photo": "cross-env REACT_APP_BUILD=photo react-scripts build"
+    "build:photo": "cross-env REACT_APP_BUILD=photo react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
